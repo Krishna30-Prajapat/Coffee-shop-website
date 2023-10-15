@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- css for bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us|| Coffee Culture</title>
+</head>
+<body class="aboutPage ContactPage">
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand fixed-top">
+        <a href="index.html" class="navbar-brand">Coffee<span>.</span>Culture <img class="image" src="media/coffeicon1.jpeg" width="65" height="60"></a>
+        <!-- <div> -->
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="product.html" class="nav-link">Product</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active">Contact</a></li>
+            </ul>
+        <!-- </div> -->
+    </nav>
+    <!-- navabar end -->
+
+    <!-- home section start -->
+    <section>
+        <div class="AboutHome">
+            <div class="AboutHomeParent">
+                <div>
+                    <img src="media/cimg222.jpg" alt="">
+                </div>
+                <div class="ImgOverlay"></div>
+                <div class="VidContent">
+                    <h6>Contact Us for <br><span>Quick Support</span></h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home section end -->
+
+
+    <!-- Contact page start -->
+    <section>
+
+        <div class="contact container">
+
+            <div class="row justify-content-center">
+
+                <h6>Fill The Form</h6>
+                <div class="col-sm-8">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Name</label>
+                            <input type="text" placeholder="Enter Your Name" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="email" placeholder="Enter Your Email" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Phone Number</label>
+                            <input type="tel" placeholder="Enter Your Number" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">How can We help you ?</label>
+                            <textarea name="" class="form-control" placeholder="How can We help you ?" required id="" cols="30" rows="8"></textarea>
+                        </div><br>
+                        <button class="btn">Submit Now</button>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Contact page end -->
+
+
+            <!-- footer start -->
+            <footer>
+                <a href="#">Krishna Prajapat || 2023</a>
+            </footer>
+            <!-- footer end -->
+        
+        
+            <!-- script for bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        
+            <!-- custom script -->
+            <script>
+                $(document).scroll(function(){
+                    $(".navbar").toggleClass("scroll", $(this).scrollTop() > $(".navbar").height())
+                })
+            </script>
+        </body>
+        </html>

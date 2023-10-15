@@ -1,0 +1,633 @@
+:root {
+    --main:#aa6504;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #aa6504;
+}
+::-webkit-scrollbar-track{
+    background: #000;
+}
+*::selection {
+    background: var(--main);
+    color: #000;
+}
+.btn{
+    width: 350px;
+    border: 3px solid var(--main);
+    color: var(--main) !important;
+    border-radius: 10px;
+    font-weight: bolder;
+    flex-wrap: wrap;
+    
+}
+.btn:hover{
+    background: var(--main);
+    color: #fff !important;
+    letter-spacing: 4px;
+    transition: 0.2s linear;
+    animation: hover 1s infinite alternate ease-in-out;
+}
+@keyframes hover {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.15, 1.15);
+    }
+}
+
+body{
+    background: #222;
+    color: #fff;
+}
+
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    transition: 0.5s linear;
+    box-sizing: border-box;
+}
+
+
+/* navbar start */
+.navbar{
+    
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;  
+    background: #000;
+    flex-wrap: wrap;
+    
+}
+.navbar.scroll{
+    background: #000;
+    padding: 5px;
+}
+.navbar-brand{
+    font-weight: 600;
+    font-size: 3rem;
+    color: #fff !important;
+    display: flex;
+    background: #3f3c3c;
+    border-radius: 12px;
+    padding: 5px 20px;
+    flex-wrap: wrap;
+}
+.navbar-brand span{
+    color: var(--main);
+}
+.navbar-nav{
+    padding: 20px auto;
+    margin-top: 10px;
+}
+.nav-link{
+    color: #fff !important;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.nav-link:hover, .nav-link.active{
+    background: var(--main);
+}
+/*  */
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    background: #3f3c3c;
+    padding: 15px 10px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+  .navbar-nav li{
+    list-style: none;
+    margin: 0 12px;
+  }
+  .navbar-nav li a{
+    position: relative;
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px 0;
+    text-decoration: none;
+    flex-wrap: wrap;
+  }
+  .navbar-nav li a:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 0%;
+    background: #939388;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+  }
+  .navbar-nav li a:hover:before{
+    width: 100%;
+  }
+  .navbar-nav li.nav-item a:before{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+/* navbar end */
+
+
+/* home section start */
+.Home{
+    position: relative;
+}
+.Home video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.VidOverlay, .secondHeaderOverlay, .AboutHome .ImgOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    opacity: 0.4;
+    
+}
+.VidContent{
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    background: #222121;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 25px;
+    flex-wrap: wrap;
+}
+.VidContent h6{
+    font-size: 60px;
+    
+}
+.VidContent h6 span{
+    /* color: var(--main); */
+    font-weight: 600;
+    background: #aa6504;
+    border-radius: 15px;
+    padding: 2px 10px;
+}
+.VidContent h6 span:hover{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+/* home section end */
+
+/* start coffee start fresh */
+.startFresh{
+    margin: 150px auto;
+    position: relative;
+}
+.startFresh .animateimg{
+    position: absolute;
+    animation: MoveLeftRight 8s infinite;
+    padding: 0 100px;
+}
+.startFresh h6{
+    font-size: 70px;
+    margin-top: 40px;
+}
+.startFresh h6 span{
+    color: var(--main);
+    font-weight: 600;
+}
+@keyframes MoveLeftRight {
+    0%{
+        right: 0;
+    }
+    25%{
+        right: 20%;
+    }
+    50%{
+        right: 0;
+    }
+    75%{
+        right: 20%;
+    }
+    100%{
+        right: 0;
+    }
+}
+/* start coffee start fresh */
+
+/* second header start */
+.secondHeader{
+    position: relative;
+    margin-bottom: 150px;
+}
+.secondHeader img{
+    width: 100%;
+    height: 70vh;
+    transform: rotate(-180deg);
+    object-fit: cover;
+}
+.secondHeaderOverlay{
+    opacity: 0.6;
+}
+.secondHeaderContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    padding: 0 180px 0 0;
+    /* background: var(--main); */
+
+}
+.secondHeaderContent h6{
+    font-size: 60px;
+}
+/* second header end */
+
+/* product section start */
+.products{
+    margin-bottom: 150px;
+}
+.products .box{
+    padding: 12px;
+    border-radius: 20px;
+    background: #3d3939;
+    box-shadow: 10px 10px 10px -10px rgba(0,0,0,0.7), inset 10px 10px 10px -10px rgba(0,0,0,0.7);
+
+}
+.products .boxContent{
+    padding: 20px;
+}
+.products .boxContent h5{
+    color: #00e1ff;
+    font-size: 20px;
+}
+.products .boxContent h6{
+    font-size: 30px;
+}
+.products .boxContent p{
+    font-size: 15px;
+}
+.products .secondRow{
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+/* product section end */
+
+/* footer start */
+footer{
+    background: #000;
+    text-align: center;
+    padding: 20px;
+}
+footer a{
+    color: #fff !important;
+    text-decoration: none !important;
+}
+/* footer end */
+
+/* =================================================
+                 About page start
+================================================ */
+.aboutPage .AboutHome{
+    position: relative;
+}
+.aboutPage .AboutHome img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    transform: rotate(-180deg);
+}
+.aboutPage .ImgOverlay{
+    opacity: 0.3;
+}
+/* <!-- about home section start -->*/
+.aboutPage .about{
+    margin: 150px auto;
+}
+.aboutPage .about img{
+    height: 500px;
+    width: 100%;
+}
+.aboutPage .about .content{
+    margin-top: 15px;
+}
+.aboutPage .about .content h6{
+    font-size: 50px;
+    font-weight: 600;
+}
+.aboutPage .about .content h6 span{
+    color: var(--main);
+}
+ /*   <!-- about home section end --> */
+/* =================================================
+                 About page end
+================================================ */
+
+/* =================================================
+                 Products page start
+================================================ */
+.productsPagemain{
+    margin: 80px auto;
+}
+/* =================================================
+                 Products page end
+================================================ */
+
+/* =================================================
+                 Contact page start
+================================================ */
+.ContactPage .contact{
+    margin: 150px auto;
+}
+.ContactPage .contact h6{
+    text-align: center;
+    font-size: 60px;
+}
+.ContactPage .contact form{
+    box-shadow: 20px 20px 20px -20px rgba(0,0,0,0.7), inset 20px 20px 20px -20px rgba(0,0,0,0.9);
+    padding: 20px;
+
+}
+.ContactPage .contact textarea{
+    resize: none;
+}
+/* =================================================
+                 Contact page end
+================================================ */
+
+/* =================================================
+                 main product page start
+================================================ */
+.mainBuyProducts{
+    margin: 180px auto;
+}
+.mainBuyProducts img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}.mainBuyProducts .col-sm-5 .boxContent{
+    padding: 20px;
+}
+.mainBuyProducts .boxContent h5{
+    color: #00e1ff;
+    font-size: 20px;
+}
+.mainBuyProducts .boxContent h6{
+    font-size: 30px;
+}
+.mainBuyProducts .boxContent p{
+    font-size: 15px;
+}
+/* =================================================
+                 Main product page end
+================================================ */
+
+
+
+
+@media only screen and (max-width: 600pxpx){
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+
+
+
+
+  .btn{
+    width: 100%;
+    font-size: 15px;
+    padding: 4px;
+}
+.navbar{
+    width: 100%;
+    position: relative;
+}
+.navbar-nav li a {
+    font-size: 14px;
+}
+.navbar-brand{
+    font-size: 30px;
+    padding-top: 5px;
+}
+.VidContent {
+    top: 65%;
+    left: 25%;
+}
+.VidContent h6{
+    font-size: 40px;
+}
+.startFresh .animateimg{
+    width: 150%;
+    left: -20%;
+    top: 20%;
+}
+.startFresh h6{
+    font-size: 55px;
+}
+.secondHeaderContent h6{
+    font-size: 55px;
+}
+.aboutPage .about img{
+    height: 360px;
+}
+.aboutPage .about .content h6{
+    font-size: 35px;
+}
+.aboutPage .about .content p{
+    font-size: 12px;
+}
+.products .boxContent{
+    padding: 5px 10px 5px 10px;
+}
+.products .boxContent h6{
+    font-size: 23px;
+}
+.products .boxContent h5{
+    font-size: 15px;
+}
+.products .boxContent p{
+    font-size: 12px;
+}
+
+
+
+
+
+}
+  
+  @media only screen and (max-width: 768px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+
+
+    .btn{
+        width: 100%;
+        font-size: 15px;
+        padding: 4px;
+    }
+    .navbar{
+        width: 100%;
+        position: relative;
+    }
+    .navbar-nav li a {
+        font-size: 8px;
+    }
+    .navbar-brand{
+        font-size: 15px;
+        padding-top: 5px;
+    }
+    .VidContent {
+        top: 65%;
+        left: 25%;
+    }
+    .VidContent h6{
+        font-size: 40px;
+    }
+    .startFresh .animateimg{
+        width: 150%;
+        left: -20%;
+        top: 20%;
+    }
+    .startFresh h6{
+        font-size: 55px;
+    }
+    .secondHeaderContent h6{
+        font-size: 55px;
+    }
+    .aboutPage .about img{
+        height: 360px;
+    }
+    .aboutPage .about .content h6{
+        font-size: 35px;
+    }
+    .aboutPage .about .content p{
+        font-size: 12px;
+    }
+    .products .boxContent{
+        padding: 5px 10px 5px 10px;
+    }
+    .products .boxContent h6{
+        font-size: 23px;
+    }
+    .products .boxContent h5{
+        font-size: 15px;
+    }
+    .products .boxContent p{
+        font-size: 12px;
+    }
+
+
+
+
+  }
+  
+  @media only screen and (max-width: 992px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .btn{
+        width: 100%;
+        font-size: 15px;
+        padding: 4px;
+    }
+    .navbar{
+        width: 100%;
+        position: relative;
+    }
+    .navbar-nav li a {
+        font-size: 14px;
+    }
+    .navbar-brand{
+        font-size: 30px;
+        padding-top: 5px;
+    }
+    .VidContent {
+        top: 65%;
+        left: 25%;
+    }
+    .VidContent h6{
+        font-size: 45px;
+    }
+    .startFresh .animateimg{
+        width: 150%;
+        left: -20%;
+        top: 20%;
+    }
+    .startFresh h6{
+        font-size: 55px;
+    }
+    .secondHeaderContent h6{
+        font-size: 55px;
+    }
+    .aboutPage .about img{
+        height: 360px;
+    }
+    .aboutPage .about .content h6{
+        font-size: 35px;
+    }
+    .aboutPage .about .content p{
+        font-size: 12px;
+    }
+    .products .boxContent{
+        padding: 5px 10px 5px 10px;
+    }
+    .products .boxContent h6{
+        font-size: 23px;
+    }
+    .products .boxContent h5{
+        font-size: 15px;
+    }
+    .products .boxContent p{
+        font-size: 12px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px){
+    .btn{
+        width: 100%;
+    }
+    .VidContent {
+        top: 65%;
+        left: 25%;
+    }
+  }
