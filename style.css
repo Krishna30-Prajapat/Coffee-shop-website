@@ -477,7 +477,7 @@ body{
 }
 .navbar-nav{
     padding: 8px 2px 8px 2px;
-
+    display: none;
 }
 .nav-link{
     margin-left: 1px;
