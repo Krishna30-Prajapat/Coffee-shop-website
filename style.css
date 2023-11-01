@@ -318,6 +318,11 @@ footer a{
     object-fit: cover;
     transform: rotate(-180deg);
 }
+.aboutPage .ProductHome img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
 .aboutPage .ImgOverlay{
     opacity: 0.3;
 }
