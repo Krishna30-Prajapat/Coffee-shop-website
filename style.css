@@ -56,7 +56,7 @@ body{
 
 /* navbar start */
 .navbar{
-    
+    opacity: 80%;
     padding: 10px;
     display: flex;
     justify-content: space-between;
