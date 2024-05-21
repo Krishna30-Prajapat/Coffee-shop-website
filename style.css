@@ -63,7 +63,7 @@ body{
     border-bottom: 1px solid #fff;  
     background: #000;
     flex-wrap: wrap;
-    
+    opacity: 85%;
 }
 .navbar.scroll{
     background: #000;
@@ -296,15 +296,61 @@ body{
 
 /* footer start */
 footer{
-    background: #000;
+    position: relative;
+    margin-top: -1px;
+    background: #2b293b;
     text-align: center;
-    padding: 20px;
+    padding: 5rem;
 }
-footer a{
-    color: #fff !important;
-    text-decoration: none !important;
+
+.footer-wrapper{
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.footer-faded-text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #535c87;
+    user-select: none;
+    font-size: 3em;
+    opacity: 20%;
+    
+}
+
+.link-wrapper{
+    display: flex;
+    gap: 1.2rem;
+    font-size: 20px;
+}
+
+.link-wrapper div a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.6s;
+}
+
+.link-wrapper div a:hover{
+    color: var(--main);
+    text-decoration: none;
+}
+
+.icon-wrapper{
+    display: flex;
+    gap: 1rem;
+}
+
+.icon-wrapper i:hover{
+    color: var(--main);
+}
+
+
 /* footer end */
+
 
 /* =================================================
                  About page start
@@ -405,6 +451,33 @@ footer a{
 }
 .mainBuyProducts .boxContent p{
     font-size: 15px;
+}
+
+/* 
+login popup */
+.modayBody {
+    background: #222;
+}
+
+.modayBody h6{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px auto;
+
+}
+
+.modayBody input {
+    background: none !important;
+    border-radius: 10px;
+}
+
+.modayBody input::placeholder{
+    color: #fff;
+}
+
+.modayBody .btn{
+    margin-bottom: 15px;
 }
 /* =================================================
                  Main product page end
