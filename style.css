@@ -205,7 +205,7 @@ body{
 .startFresh .animateimg{
     position: absolute;
     animation: MoveLeftRight 8s infinite;
-    padding: 0 100px;
+    padding: -10px 100px;
 }
 .startFresh h6{
     font-size: 70px;
