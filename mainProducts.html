@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- css for bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
     <!-- link css -->
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
@@ -77,7 +79,8 @@
                                         molestias natus iusto officiis quos!
                                          Natus.
                                 </p>
-                                <button class="btn" href="#Login" data-toggle="modal" data-target="#Login">Buy Now</button>
+                                
+                                <button class="btn" data-toggle="modal" data-target="#LoginPopup">Buy Now</button>
                                 
                     </div>
 
@@ -95,7 +98,7 @@
 
 
         <!-- login section start -->
-        <div class="modal fade" id="Login">
+        <div class="modal fade" id="LoginPopup">
             <div class="modal-dialog modal-dialog-centered">
 
                 <div class="modal-content">
@@ -136,12 +139,49 @@
         </div>
         <!-- login section end -->
 
+    <!-- footer start -->
     <footer>
-        <a href="#">Epic Bytes! || @2023</a>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-faded-text">Epic Bytes !</div>
+
+                <div class="link-wrapper">
+                    <div>
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div>
+                        <a href="product.html">Product</a>
+                    </div>
+                    <div>
+                        <a href="about.html">About</a>
+                    </div>
+                    <div>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+                <div class="icon-wrapper">
+                    <i class="fa fa-linkedin-square icon" style="font-size:36px"></i>
+                    <i class="fa fa-instagram icon" style="font-size:36px"></i>
+                    <i class="fa fa-twitter icon" style="font-size:36px"></i>
+                    <i class="fa fa-github icon" style="font-size:36px"></i>
+                    <i class="fa fa-envelope icon" style="font-size:36px"></i>
+                    
+                </div>
+            </div>
+        </div>
     </footer>
+    <!-- footer end -->
+
+    <script src="script.js"></script>
     
         <!-- script for bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+
+        <!-- custom script -->
+    
     
         
     </body>
