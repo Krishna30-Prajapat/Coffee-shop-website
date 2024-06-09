@@ -541,6 +541,25 @@ login popup */
 
 
 @media only screen and (max-width: 600px){
+    .Home video{
+        height: 70vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    /* .VidOverlay, .secondHeaderOverlay, .AboutHome .ImgOverlay{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 50%;
+    } */
+    .aboutPage .AboutHome img{
+        height: 70vh;
+        width: 100%;
+        object-fit: cover;
+    /*     transform: rotate(-180deg); */
+        transform: scaleX(-1);
+    }
 .dropdown{
     display: inline-block;
 }
@@ -579,7 +598,7 @@ body{
 .navbar-brand{
     width: 25%;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
     padding-left: 5px;
 }
 .navbar-brand .image{
@@ -639,7 +658,12 @@ body{
 .products .boxContent p{
     font-size: 12px;
 }
-
+.icon-wrapper{
+    display: grid;
+}
+.link-wrapper{
+    display: grid;
+}
 
 
 
@@ -735,6 +759,18 @@ body{
     .products .boxContent p{
         font-size: 10px;
     }
+    .link-wrapper{
+        display: grid;
+        gap: .8rem;
+        font-size: 16px;
+        
+    }
+    
+    .icon-wrapper{
+        display: grid;
+        gap: 0.8rem;
+        
+    }
   }
   
   @media only screen and (max-width: 992px) and (min-width: 769px) {
@@ -787,7 +823,8 @@ body{
         font-size: 55px;
     }
     .aboutPage .about img{
-        height: 360px;
+        height: 300px;
+        margin-top: 50px;
     }
     .aboutPage .about .content h6{
         font-size: 35px;
