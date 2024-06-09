@@ -660,9 +660,22 @@ body{
 }
 .icon-wrapper{
     display: grid;
+    margin-right: 0px;
+    font-size: 15px;
+    gap: 0.8rem;
 }
 .link-wrapper{
     display: grid;
+    margin-right: 0px;
+    font-size: 15px;
+    gap: 0.8rem;
+}
+.footer-wrapper {
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 
